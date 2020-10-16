@@ -4,7 +4,7 @@
     <!--The link, meta, title, scripts and style go here.-->
     <head>
         <!--This is for the viewport.-->
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="viewport" content="width=device-width, height=device-height, initial-scale=1.0">
         <meta charset="UTF-8">
         <!--Title for the browser tag.-->
         <title>Portfolio Project</title>
@@ -17,9 +17,13 @@
         
         <!--External fonts.-->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
-        
+    
         <!--Css before external file.-->
         <style>
+            /*Fonts
+            font-family: 'Open Sans', sans-serif;
+            font-family: 'Raleway', sans-serif;
+
             /*Colors to use from lighter to darker:  
             greens: 
                     #9ecf89 
@@ -31,10 +35,110 @@
                     #f6b6b3 
                     #ed7275
             */
+            /*BODY*/
+            body {
+                font-size: 16px;
+                /*These 3 important so that there is no gap in the webpage.*/
+                height: 100%;
+                margin: 0;
+                padding: 0;
+            }
+            /*NAVBAR*/
+            .nav {
+                display: flex;
+                justify-content: flex-end;
+                position: fixed;
+                z-index: 100;
+                background-color:#f0ddeb;
+                width: 100%;
+                border-bottom: 10px solid #d9aed0;
+            }
+            .nav li {
+                list-style: none;
+                padding: 20px 20px 20px 20px;
+            }
+            .nav a {
+                color:#ed7275;
+                font-family: 'Raleway', sans-serif;
+                text-decoration: none;
+                font-size: 3em;
+            }
+            .nav a:hover {
+                background-color: #d9aed0;
+            }
+            /*WELCOME*/
+            #welcome-section {
+                background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("images/welcome.jpg");
+                width:100%;
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                position: absolute;
+                z-index: 0;
+            }
+            #welcome-section h1 {
+                font-family: 'Open Sans', sans-serif;
+                color:    #f6b6b3;
+                font-size: 6em;
+                position: relative;
+                top: 40%;
+                text-align: center;
+                text-shadow: 4px 6px #ed7275;
+                
+            }
+            #welcome-section p {
+                font-family: 'Raleway', sans-serif;
+                color:  #ed7275;
+                font-size: 4em;
+                position: relative;
+                text-align: center;
+                top: 40%;
+            }
+            /*PROJECTS*/
+            #projects {
+                background-color:#f0ddeb; 
+            }
+            /*LINKS*/
+            #links {
+                background-color:#9ecf89;
+            }
         </style>    
     </head>
 
     <body>
+        <!--The navbar-->
+        <navbar id="navbar" class="nav">
+            <ul class="nav-list"></ul>
+                <li>
+                    <a href="#welcome-section">About</a>
+                </li>
+                <li>
+                    <a href="#projects">Projects</a>
+                </li>
+                <li>
+                    <a href="#links">Follow me</a>
+                </li>
+            </ul>
+        </navbar>
+        
+        <!--Welcome-section-->
+        <section id="welcome-section">
+            <h1>Hey I am Aga</h1>
+            <p>a knitter</p>
+        </section>
+
+        <!--Projects Section-->
+        <section id="projects">
+
+        </section>
+
+        <!--Links Section-->
+        <section id="links">
+
+        </section>
+
+
  
     </body>
 </html>
