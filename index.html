@@ -13,7 +13,7 @@
         <!--<link rel='stylesheet' type='text/css' href='css/css.css'>-->
         
         <!--FontAwesome.-->
-        <!--<script src="https://kit.fontawesome.com/f08dd09bd3.js" crossorigin="anonymous"></script>-->
+        <script src="https://kit.fontawesome.com/f08dd09bd3.js" crossorigin="anonymous"></script>
         
         <!--External fonts.-->
         <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@700&family=Raleway:wght@300&display=swap" rel="stylesheet"> 
@@ -104,7 +104,7 @@
             /*PROJECTS*/
             #projects {
                 display: flex;
-                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("images/zako.jpg");
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("images/house.jpg");
                 width: 100%;
                 height: 100vh;
                 background-position: center;
@@ -119,7 +119,7 @@
                 font-family: 'Raleway', sans-serif;
                 color:    #ed7275;
                 text-decoration: underline overline;
-                margin-top: 0vh;
+                margin-top: -20vh;
             }
             /*Flex box inside projects to showcase.*/
             /*The container itself.*/
@@ -131,20 +131,45 @@
                 justify-content: space-around;
                 align-items: center;
                 width: 100%;
-                background-color: #d9aed0;
+                /*Optional.*/
+                /*background-color: #f0ddeb;*/
             }
             /*Each item inside container.*/
             .item1 {
+                background-image: url("images/baby.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 background-color: #f0ddeb;
+                height: 25vh;
                 width: 20%;
+                /*Optional.*/
+                border-radius: 25px;
+                border: 10px solid #d9aed0;
             }
             .item2 {
+                background-image: url("images/pull.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 background-color: #f0ddeb;
+                height: 25vh;
                 width: 20%;
-            }
+                /*Optional.*/
+                border-radius: 25px;
+                border: 10px solid #d9aed0;
+            }    
             .item3 {
+                background-image: url("images/gloves.jpg");
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
                 background-color: #f0ddeb;
+                height: 25vh;
                 width: 20%;
+                /*Optional*/
+                border-radius: 25px;
+                border: 10px solid #d9aed0;
             }
 
             .item1 p {
@@ -152,6 +177,7 @@
                 font-family: 'Raleway', sans-serif;
                 color:    #ed7275;
                 font-size: 2em;
+                background-color:  #f0ddeb;
             }
 
             .item2 p {
@@ -159,6 +185,7 @@
                 font-family: 'Raleway', sans-serif;
                 color:    #ed7275;
                 font-size: 2em;
+                background-color:  #f0ddeb;
             }
 
             .item3 p {
@@ -167,11 +194,63 @@
                 color:    #ed7275;
                 font-family: 'Raleway', sans-serif;
                 font-size: 2em;
+                background-color:  #f0ddeb;
             }
             /*LINKS*/
             #links {
-                background-color:    #6abc6f;
+                display: flex;
+                background-image: linear-gradient(rgba(0, 0, 0, 0.8), rgba(0, 0, 0, 0.1)), url("images/sheep.jpg");
+                width: 100%;
+                height: 100vh;
+                background-position: center;
+                background-repeat: no-repeat;
+                background-size: cover;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
             }
+            #links h2 {
+                font-size: 4em;
+                font-family: 'Raleway', sans-serif;
+                color:    #ed7275;
+                text-decoration: underline overline;
+                margin-top: -30vh;
+            }
+            .container-links {
+                margin-top: 20vh;
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+                justify-content: space-around;
+                align-items: center;
+                width: 100%;
+                /*Optional*/
+                /*background-color: #f0ddeb;*/
+            }
+            .link {
+                text-align: center;
+                background-color: #f0ddeb;
+                height: 10vh;
+                width: 10%;
+                /*Optional.*/
+                border-radius: 25px;
+                border: 10px solid #d9aed0;
+            }
+            .fab {
+                padding-top: 20%;
+                font-size: 8em;
+                color:#ed7275;
+            }
+            /*FOOTER*/
+            footer {
+                font-family: 'Raleway', sans-serif;
+                color: #ed7275;
+                background-color: #F0ddeb;
+                margin-top: -80px;
+                text-align: center;
+                font-size: 1.5em;
+            }
+            
         </style>    
     </head>
 
@@ -186,7 +265,7 @@
                     <a href="#projects">Creations</a>
                 </li>
                 <li>
-                    <a href="#links">Follow me</a>
+                    <a href="#links">Follow</a>
                 </li>
             </ul>
         </navbar>
@@ -200,7 +279,7 @@
         <!--Projects Section-->
         <section id="projects">
             <h2>Some of my creations</h2>
-            <div class="container">
+            <div class="container project-title">
                 <div class="item1">
                     <p>Baby cardigan/body</p>
                 </div>
@@ -215,8 +294,29 @@
 
         <!--Links Section-->
         <section id="links">
-
+            <h2>Follow me</h2>
+            <div class="container-links">
+                <div class="link">
+                    <a href="https://www.etsy.com/" target="_blank">
+                        <i class="fab fa-etsy"></i></a>
+                </div>
+                <div class="link">
+                    <a href="https://www.instagram.com/" target="_blank">
+                        <i class="fab fa-instagram"></i></a>
+                </div>
+                <div class="link">
+                    <a href="https://www.facebook.com/" target="_blank">
+                        <i class="fab fa-facebook-square"></i></a>
+                </div>
+                <div class="link">
+                    <a href="https://www.pinterest.com/" target="_blank">
+                        <i class="fab fa-pinterest-square"></i></a>
+                </div>
+            </div>
         </section>
+        <footer>
+            <p>**Example of portfolio website by <a id="profile-link"href="https://www.freecodecamp.org/rmds" target="_blank">RMDS.</a></p>
+        </footer>
 
 
  
